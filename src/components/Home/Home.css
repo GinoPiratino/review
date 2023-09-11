@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Montserrat:wght@500&family=Overpass&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  background-color: hsl(216, 12%, 8%);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 360px;
+  height: 345px;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 5%;
+  box-shadow: 0px 0px 57px 60px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(31, 29, 29);
+}
+
+.second-container {
+  margin: 20px;
+  background-color: hsl(213, 19%, 18%);
+}
+
+.circle {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(213, 15%, 27%);
+  border: none;
+}
+
+.text-question {
+  color: hsl(0, 0%, 100%);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Libre Franklin", "Montserrat", "Overpass", "Roboto", sans-serif;
+  background-color: hsl(213, 19%, 18%);
+}
+
+.expletive {
+  font-family: "Libre Franklin", "Montserrat", "Overpass", "Roboto", sans-serif;
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+  background-color: hsl(213, 19%, 18%);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: hsl(213, 19%, 18%);
+}
+
+.second-circle {
+  width: 45px;
+  height: 45px;
+  background-color: hsl(213, 15%, 27%);
+  position: relative;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.centered-text {
+  position: relative; /* Cambiato da absolute a relative */
+  font-family: "Libre Franklin", "Montserrat", "Overpass", "Roboto", sans-serif;
+  color: hsl(217, 12%, 63%);
+  background-color: hsl(213, 15%, 27%);
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s, box-shadow 0.2s ease, transform-origin 0.2s ease;
+}
+
+.centered-text:focus {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+}
+
+.centered-text:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  transform: scale(1.05);
+}
+
+.centered-text:active {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  border: none;
+  transform: scale(0.95);
+}
+
+.submit-review {
+  width: 100%;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 100px;
+  font-family: "Libre Franklin", "Montserrat", "Overpass", "Roboto", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s, box-shadow 0.2s ease, transform-origin 0.2s ease;
+}
+
+.submit-review:hover {
+  background-color: white;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: hsl(25, 97%, 53%);
+  border: 1px solid hsl(25, 97%, 53%);
+}
+
+.submit-review:active{
+  transform: scale(0.95);
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  border: none;
+}
+
+.star{
+  background-color: hsl(213, 15%, 27%);
+}
+
+button[data-value="true"]{
+  font-weight: 800;
+}
